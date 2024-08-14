@@ -1,8 +1,7 @@
 # React-umi-template
 React webpack ts umi template
-以下是一个基于你提供的 `package.json` 文件生成的 GitHub `README.md` 文档示例：
 
-```markdown
+```
 # 项目名称
 
 这是一个使用 [Umi](https://umijs.org/) 进行构建的 React 项目，包含常用的依赖和开发工具。
