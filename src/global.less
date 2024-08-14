@@ -1,0 +1,94 @@
+@import './assets/styles/reset.less';
+@import '~antd/es/style/themes/default.less';
+
+
+
+/* 修改垂直滚动条 */
+/* Webkit浏览器 (Chrome, Safari) */
+::-webkit-scrollbar {
+	width: 6px;
+
+	&-track {
+		background: #f1f1f1;
+	}
+
+	&-thumb {
+		background: #cccccc;
+
+		&:hover {
+			background: #cccccc;
+		}
+	}
+}
+
+
+input:-webkit-autofill {
+	-webkit-background-clip: text;
+	background-color: #fff;
+}
+
+
+
+/* GlobalModal.css */
+
+/* 保持原有的样式 */
+.global-modal-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(68, 2, 5, 0.30);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: inset 0 0 15px rgba(215, 1, 1, 0.5);
+	/* 初始内阴影效果 */
+	animation: breathe 1s infinite alternate;
+	/* 应用呼吸灯动画效果 */
+}
+
+@keyframes breathe {
+	0% {
+		box-shadow: inset 0 0 15px rgba(215, 1, 1, 0.5);
+		/* 初始状态 */
+	}
+
+	50% {
+		box-shadow: inset 0 0 35px rgba(215, 1, 1, 0.7);
+		/* 中间状态 - 增强内阴影效果 */
+	}
+
+	100% {
+		box-shadow: inset 0 0 15px rgba(215, 1, 1, 0.5);
+		/* 回到初始状态 */
+	}
+}
+
+.global-modal-content {}
+
+.global-modal-close-button {
+	cursor: pointer;
+	margin-bottom: 16px;
+	margin-top: 24px;
+	width: 100px;
+	height: 40px;
+	background: #ffcbce;
+	border: 2px solid #fc000d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	font-family: PingFang SC, PingFang SC-Regular;
+	font-weight: Regular;
+	text-align: center;
+	color: #fc000d;
+	line-height: 25px;
+	padding: 5px 8px;
+
+	img {
+		width: 20px;
+		margin-right: 8px;
+	}
+}
