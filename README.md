@@ -1,7 +1,6 @@
 # React-umi-template
 React webpack ts umi template
 
-```
 # 项目名称
 
 这是一个使用 [Umi](https://umijs.org/) 进行构建的 React 项目，包含常用的依赖和开发工具。
@@ -21,7 +20,7 @@ React webpack ts umi template
 
 在克隆或下载项目后，可以通过以下命令安装所需的依赖：
 
-```bash
+
 npm install
 ```
 
